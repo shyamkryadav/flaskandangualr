@@ -32,5 +32,29 @@
     margin-top: 20px;
     padding: 10px;
     background-color: #f4f4f4;
+
+  }
+  
+
+
+  .data-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    color: #4CAF50;
+  }
+  
+  .field {
+    font-weight: bold;
+  }
+  
+  .text {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #333;
   }
   

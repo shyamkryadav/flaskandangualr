@@ -14,6 +14,8 @@ export class FileUploadComponent {
 
   selectedFiles: File[] = [];
 
+  extractedData :any;
+
   constructor(private http: HttpClient) {}
 
   onFileSelected(event: any) {
@@ -36,6 +38,7 @@ export class FileUploadComponent {
     this.http.post('http://localhost:5000/upload', formData)
       .subscribe(response => {
         console.log("File upload response", response);
+        this.extractedData =response
       }, error => {
         console.error("Error uploading files", error);
       });

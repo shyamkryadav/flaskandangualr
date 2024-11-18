@@ -1,2 +1,19 @@
 <input type="file" (change)="onFileSelected($event)" multiple>
 <button (click)="uploadFiles()">Upload</button>
+
+<div class="data-container">
+    <div *ngIf="extractedData">
+        <h2>Extracted Data</h2>
+        <p><span class="field">Category:</span> <span class="text">{{ extractedData?.category }}</span></p>
+        <!-- <p><span class="field">Extracted Text:</span> <span class="text">{{ extractedData?.extracted_text }}</span></p> -->
+      
+        <h3>Fields</h3>
+        <p><span class="field">Postal:</span> <span class="text">{{ extractedData?.fields?.postal }}</span></p>
+        <p><span class="field">Pradesh:</span> <span class="text">{{ extractedData?.fields?.pradesh }}</span></p>
+        <p><span class="field">Title:</span> <span class="text">{{ extractedData?.fields?.title }}</span></p>
+        <p><span class="field">Date:</span> <span class="text">{{ extractedData?.fields?.date }}</span></p>
+        <p><span class="field">Description:</span> <span class="text">{{ extractedData?.fields?.desc }}</span></p>
+      </div>
+      
+  </div>
+  
