@@ -1,0 +1,54 @@
+<div class="prediction-form">
+  <h2>Flower Prediction Form</h2>
+
+  <button (click)="getPrediction()">Test</button>
+  <form>
+    <div>
+      <label for="sepal_length">Sepal Length:</label>
+      <input
+        type="number"
+        id="sepal_length"
+        [(ngModel)]="formData.sepal_length"
+        name="sepal_length"
+        required
+      />
+    </div>
+    <div>
+      <label for="sepal_width">Sepal Width:</label>
+      <input
+        type="number"
+        id="sepal_width"
+        [(ngModel)]="formData.sepal_width"
+        name="sepal_width"
+        required
+      />
+    </div>
+    <div>
+      <label for="petal_length">Petal Length:</label>
+      <input
+        type="number"
+        id="petal_length"
+        [(ngModel)]="formData.petal_length"
+        name="petal_length"
+        required
+      />
+    </div>
+    <div>
+      <label for="petal_width">Petal Width:</label>
+      <input
+        type="number"
+        id="petal_width"
+        [(ngModel)]="formData.petal_width"
+        name="petal_width"
+        required
+      />
+    </div>
+
+    <button  (click)="onSubmit()">Predict</button>
+    <div *ngIf="predictionResult !== undefined">
+      <h3>Prediction Result:</h3>
+      <p>{{ predictionResult }}</p>
+    </div>
+  </form>
+ 
+</div>
