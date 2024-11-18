@@ -1,0 +1,36 @@
+.upload-container {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+  }
+  
+  .response-message {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+  }
+  
